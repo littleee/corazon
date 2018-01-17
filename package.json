@@ -1,0 +1,22 @@
+{
+  "name": "corazon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/littleee/corazon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/littleee/corazon/issues"
+  },
+  "homepage": "https://github.com/littleee/corazon#readme",
+  "dependencies": {
+    "ejs": "^2.5.7"
+  }
+}
