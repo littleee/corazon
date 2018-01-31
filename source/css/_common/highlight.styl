@@ -1,0 +1,144 @@
+highlight-background = #fafafa
+highlight-current-line = #393939
+highlight-selection = #515151
+highlight-foreground = #cccccc
+highlight-comment = #999999
+highlight-red = #d44950
+highlight-orange = #f99157
+highlight-yellow = #ffcc66
+highlight-green = #00aa88
+highlight-aqua = #66cccc
+highlight-deepblue = #006699
+highlight-blue = #2f6f9f
+highlight-skyblue = #4f9fcf
+highlight-purple = #cc99cc
+color-border = #ddd
+
+article
+   h2.title
+    margin-bottom: .25em;
+    font-size: 2rem;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+    margin-bottom: 30px;
+   h3
+    font-weight: bold
+    margin: 0
+   p
+    font-size: 14px
+   table
+    border: 1px solid #eee
+    border-collapse: collapse
+    th
+      padding: 8px
+      border: 1px solid #ddd
+      line-height: 20px
+      vertical-align: middle
+    td
+      font-size: 14px
+      padding: 8px
+      border: 1px solid #ddd
+      line-height: 20px
+      vertical-align: middle
+    tbody
+      tr:nth-child(2n)
+        background-color: #fafafa
+
+
+$code-block
+  background: highlight-background
+  padding: 15px 20px
+  border-style: solid
+  border-color: color-border
+  border-width: 1px
+  overflow: auto
+  color: highlight-foreground
+pre, xmp, plaintext, listing
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace
+table
+  font-weight: 400
+$line-numbers
+  color: #666
+.gutter
+  font-size: 90%
+.code
+  padding: 2px 4px;
+  font-size: 90%;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+.gutter pre
+  @extend $line-numbers
+  text-align: right
+  padding-right: 20px
+
+.highlight
+  @extend $code-block
+  pre
+      overflow-x: auto;
+      font-size: 13px;
+      color: #777;
+      background-color: #fafafa;
+      white-space: pre;
+      word-wrap: normal;
+  table
+    margin: 0
+    width: auto
+    border: 0
+  td
+    border: none
+    padding: 0
+    .line
+      line-height: 1.5
+      font-weight: 400
+pre
+  .comment
+  .title
+    color: highlight-comment
+  .variable
+  .attribute
+  .tag .name
+  .regexp
+  .ruby .constant
+  .xml .tag .title
+  .xml .pi
+  .xml .doctype
+  .html .doctype
+  .css .id
+  .css .class
+  .css .pseudo
+    color: highlight-blue
+  .tag .attr
+    color: highlight-skyblue
+  .number
+  .preprocessor
+  .built_in
+  .literal
+  .params
+  .constant
+    color: highlight-orange
+  .class
+  .ruby .class .title
+  .css .rules .attribute
+    color: highlight-green
+  .string
+  .value
+  .inheritance
+  .header
+  .ruby .symbol
+  .xml .cdata
+    color: highlight-red
+  .css .hexcolor
+    color: highlight-aqua
+  .function
+  .python .decorator
+  .python .title
+  .ruby .function .title
+  .ruby .title .keyword
+  .perl .sub
+  .javascript .title
+  .coffeescript .title
+    color: highlight-blue
+  .keyword
+  .javascript .function
+    color: highlight-purple
