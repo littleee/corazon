@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/littleee/corazon#readme",
   "dependencies": {
-    "ejs": "^2.5.7"
+    "ejs": "^2.5.7",
+    "highlight": "^0.2.4"
   }
 }
