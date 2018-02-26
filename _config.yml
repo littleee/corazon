@@ -1,4 +1,20 @@
-
+custom_logo:
+  enabled: true
+  image: /images/logo.jpg
 menu:
-  Home: /
-  Archives: /archives
+  home: /
+  about: /about/
+  #tags: /tags/ || tags
+  #categories: /categories/ || th
+  archives: /archives/
+  #schedule: /schedule/ || calendar
+  #sitemap: /sitemap.xml || sitemap
+  #commonweal: /404/ || heartbeat
+#menu:
+  #schedule: /schedule/ || calendar
+  #sitemap: /sitemap.xml || sitemap
+  #commonweal: /404/ || heartbeat
+
+# Enable/Disable menu icons.
+menu_icons:
+  enable: true
