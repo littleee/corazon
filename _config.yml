@@ -1,8 +1,8 @@
 custom_logo:
   enabled: true
-  image: /images/logo.jpg
+  image: /images/logo.png
 menu:
-  home: /
+  home: / || home
   about: /about/
   #tags: /tags/ || tags
   #categories: /categories/ || th
@@ -17,4 +17,4 @@ menu:
 
 # Enable/Disable menu icons.
 menu_icons:
-  enable: true
+  enable: false

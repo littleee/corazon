@@ -1,11 +1,16 @@
 h1, h2, h3, h4, h5, h6
   font-weight: 400;
   color: #222;
-
+html {
+  background-color: #AEE2D9
+}
 body {
-  background-color: #F2F2F2;
-  font-size: 16px;
-  line-height: 1.5;
+  background-color: #e9fbf8;
+  background-image: -webkit-radial-gradient(50% 0, ellipse farthest-corner, #DBF5F1 0%, #9BE4D8 100%);
+  background-image: radial-gradient(ellipse farthest-corner at 50% 0, #DBF5F1 0%, #9BE4D8 100%);
+  overflow-x: hidden;
+  font-family: Lato,"Microsoft YaHei",sans-serif;
+  font-weight: 400;
 }
 
 .container {
@@ -13,6 +18,13 @@ body {
   margin: 0 auto;
 }
 
+.flex-col-1{
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
+}
 @import "_common/header";
+@import "_common/main";
 @import "_common/post";
 @import "_common/highlight";
