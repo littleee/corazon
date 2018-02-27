@@ -1,31 +1,133 @@
+.header.out{
+  top:7px;
+}
 .header {
-  margin-top: 2em
+  position: fixed
+  top: 13px
+  left: 0
   display: flex
-  align-items: baseline
-  justify-content: space-between
-
-  .blog-title .logo {
-    color: #AAA;
-    font-size: 2em;
-    text-decoration: none;
+  width:100%
+  flex-direction: row
+  justify-content: center
+  background-color: #000
+  transition: top 0.3s ease
+  .color-bar.out{
+    height: 7px;
   }
-
-  .menu {
-    margin: 0;
-    padding: 0;
-
-    .menu-item {
-      display: inline-block;
-      margin-right: 10px;
-    }
-
-    .menu-item-link {
-      color: #AAA;
-      text-decoration: none;
-
-      &:hover {
-        color: #368CCB;
+  .color-bar{
+    position: fixed
+    top: 0
+    height: 13px
+    width: 100%;
+    transition: height 0.3s ease
+    ul{
+      margin: 0
+      padding: 0
+      .bar1{
+        background-color: #f12f25
+      }
+      .bar2{
+        background-color: #ff9531
+      }
+      .bar3{
+        background-color: #efd21f
+      }
+      .bar4{
+        background-color: #aec534
+      }
+      .bar5{
+        background-color: #24a5db
+      }
+      .bar6{
+        background-color: #5830cb
+      }
+      li{
+        height: 100%
+        width: 16.6666%
+        float: left
+        list-style: none
       }
     }
+  }
+  .header-wrapper{
+    display:flex;
+    width:90%
+    max-width:1000px;
+    padding: 0 5px
+    height: 46px
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    .blog-title {
+      display:flex
+      .logo{
+        width:32px;
+        height:32px;
+      }
+      .title {
+        color: #fff;
+        font-size: 1.5em;
+        text-decoration: none;
+      }
+    }
+    .navbar-menu{
+      color: #D0648a;
+    }
+    .navbar{
+      min-height:0 ;
+      margin: 0 ;
+      .container-fluid{
+        .navbar-header{
+          .navbar-toggle{
+            margin: 0
+            border: 1px solid #fff
+            padding: 7px 6px
+            .icon-bar{
+              background-color: #fff
+            }
+          }
+        }
+      }
+      .menu {
+        margin: 0;
+        padding: 0;
+        float:left
+        .menu-item {
+          display: inline-block;
+          margin-right: 10px;
+          i{
+            color:#ccc;
+          }
+        }
+        .menu-item-link {
+          color: #ccc;
+          text-decoration: none;
+          &:hover {
+            color: #368CCB;
+          }
+        }
+      }
+    }
+  }
+
+}
+.nav-collapse{
+  left: 0
+  background-color: #000
+  width: 100%
+  .menu{
+    .menu-item {
+      display: block
+    }
+  }
+}
+@media(min-width:768px){
+  .menu-pc{
+    display:block
+  }
+}
+@media(max-width:767px){
+  .menu-pc{
+    display: none
   }
 }

@@ -1,18 +1,50 @@
 <header class="header">
-  <div class="blog-title">
-    <% if (theme.custom_logo['enabled'] == true) { %>
-      <img src="<%- url_for(theme.custom_logo['image']) %>" alt="logo">
-    <% } %>
-    <a href="<%- url_for() %>" class="logo"><%= config.title %></a>
-  </div>
-  <nav class="navbar">
-    <ul class="menu">
-      <% for (name in theme.menu) { %>
-        <li class="menu-item">
-          <i class="fa fa-camera-retro"></i>
-          <a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link"><%= __(name) %></a>
-        </li>
-      <% } %>
+  <div class="color-bar">
+    <ul>
+      <li class="bar1"></li>
+      <li class="bar2"></li>
+      <li class="bar3"></li>
+      <li class="bar4"></li>
+      <li class="bar5"></li>
+      <li class="bar6"></li>
     </ul>
-  </nav>
+  </div>
+  <div class="header-wrapper">
+    <div class="blog-title">
+      <% if (theme.custom_logo['enabled'] == true) { %>
+        <img class="logo" src="<%- url_for(theme.custom_logo['image']) %>" alt="logo">
+      <% } %>
+      <a href="<%- url_for() %>" class="title"><%= config.title %></a>
+    </div>
+    <nav class="navbar navbar-menu">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+      </div>
+        <ul class="menu menu-pc">
+          <% for (name in theme.menu) { %>
+            <li class="menu-item">
+              <i class="fa fa-camera-retro"></i>
+              <a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link"><%= __(name) %></a>
+            </li>
+          <% } %>
+        </ul>
+    </nav>
+  </div>
 </header>
+<div class="collapse nav-collapse" style="position:fixed;top:47px;" id="bs-example-navbar-collapse-1">
+  <ul class="menu" style="list-style:none">
+    <% for (name in theme.menu) { %>
+      <li class="menu-item">
+        <i class="fa fa-camera-retro"></i>
+        <a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link"><%= __(name) %></a>
+      </li>
+    <% } %>
+  </ul>
+</div>
