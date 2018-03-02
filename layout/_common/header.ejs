@@ -19,7 +19,7 @@
     <nav class="navbar navbar-menu">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <button type="button" id="nav-btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -30,20 +30,18 @@
         <ul class="menu menu-pc">
           <% for (name in theme.menu) { %>
             <li class="menu-item">
-              <i class="fa fa-camera-retro"></i>
-              <a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link"><%= __(name) %></a>
+              <a href="<%- theme.menu[name].split(' || ')[0] %>" class="menu-item-link"><i class="fa fa-<%- theme.menu[name].split(' || ')[1] %>"></i><span><%= __(name) %></span></a>
             </li>
           <% } %>
         </ul>
     </nav>
   </div>
 </header>
-<div class="collapse nav-collapse" style="position:fixed;top:47px;" id="bs-example-navbar-collapse-1">
-  <ul class="menu" style="list-style:none">
+<div class="collapse nav-collapse" style="position:fixed;top:59px;" id="bs-example-navbar-collapse-1">
+  <ul class="menu menu-mobile" style="list-style:none">
     <% for (name in theme.menu) { %>
       <li class="menu-item">
-        <i class="fa fa-camera-retro"></i>
-        <a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link"><%= __(name) %></a>
+        <a href="<%- theme.menu[name].split(' || ')[0] %>" class="menu-item-link"><i class="fa fa-<%- theme.menu[name].split(' || ')[1] %>"></i><span><%= __(name) %></span></a>
       </li>
     <% } %>
   </ul>

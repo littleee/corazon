@@ -1,20 +1,17 @@
-custom_logo:
+custom_logo:    #header logo
   enabled: true
   image: /images/logo.png
 menu:
   home: / || home
-  about: /about/
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
-  archives: /archives/
-  #schedule: /schedule/ || calendar
-  #sitemap: /sitemap.xml || sitemap
-  #commonweal: /404/ || heartbeat
+  tags: /tags/ || tags
+  archives: /archives/ || file
+  github: https://github.com/littleee/ || github
+  about: /about/ || user
 #menu:
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
 
 # Enable/Disable menu icons.
-menu_icons:
+menu_icons: #菜单icon
   enable: false
