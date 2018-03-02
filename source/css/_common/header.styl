@@ -96,14 +96,17 @@
           display: inline-block;
           margin-right: 10px;
           i{
-            color:#ccc;
+            width: 30px
+            height: auto
+            text-align:center
           }
         }
         .menu-item-link {
-          color: #ccc;
           text-decoration: none;
+          transition: color 0.5s ease
+          color: #ccc
           &:hover {
-            color: #368CCB;
+            color: #ffd700;
           }
         }
       }
@@ -115,9 +118,31 @@
   left: 0
   background-color: #000
   width: 100%
-  .menu{
+  transition: top 0.3s ease
+  border-top: 3px dashed #ffd700
+  .menu-mobile{
+    padding: 0
+    width: 90%
+    margin: 0 auto
+    min-height: 30px
     .menu-item {
       display: block
+      a{
+        color: #ccc
+        text-decoration: none
+        transition: color 0.5s ease
+        line-height: 30px
+        i{
+          width: 30px
+          text-align: center
+        }
+        span{
+          padding: 0 20px
+        }
+        &:hover{
+          color: #ffd700;
+        }
+      }
     }
   }
 }
