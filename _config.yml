@@ -7,11 +7,13 @@ menu:
   archives: /archives/ || file
   github: https://github.com/littleee/ || github
   about: /about/ || user
-#menu:
-  #schedule: /schedule/ || calendar
-  #sitemap: /sitemap.xml || sitemap
-  #commonweal: /404/ || heartbeat
 
 # Enable/Disable menu icons.
 menu_icons: #菜单icon
   enable: false
+#head
+show_count: true
+head_title:
+  enable: true
+  title: HELLO, IM CORA
+  subtitle: 三流代码 & 一流Bug

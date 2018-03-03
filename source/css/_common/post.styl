@@ -7,6 +7,10 @@
 }
 
 .posts  {
+  margin-top:4em
+  .post{
+    position: relative
+  }
   .post:first-child {
     margin-top: 0;
   }
@@ -28,6 +32,32 @@
   }
 
   .post-meta {
-    color: #BABABA;
+    width: 180px
+    height: 40px
+    content: " "
+    margin-left: -90px
+    border: 1px solid rgba(200,200,200,0.8)
+    background: rgba(254,254,254,0.6)
+    -moz-box-shadow: 0px 0 3px rgba(0,0,0,0.1)
+    -webkit-box-shadow: 0px 0 3px rgba(0,0,0,0.1)
+    box-shadow: 0px 0 3px rgba(0,0,0,0.1)
+    -moz-transform: rotate(-10deg)
+    -webkit-transform: rotate(-10deg)
+    -o-transform: rotate(-10deg)
+    transform: rotate(-10deg)
+    position: absolute
+    left: 50%
+    top: -20px
+    color: #BABABA
+    .post-time{
+      position: absolute
+      transform: rotate(10deg)
+      color: #ee2830
+      top: 50%
+      left: 50%
+      margin-top: -12px
+      margin-left: -46px
+      font-size: 16px
+    }
   }
 }
