@@ -2,12 +2,15 @@
   <article class="post">
     <div class="post-title">
       <h2 class="title"><%= page.title %></h2>
+       <% for (tag in page.tags.data){ %>
+        <p><%= page.tags.data[tag].name %></p>
+      <% } %>
     </div>
      <div class="post-meta">
       <span class="post-time"><%- date(page.date, "YYYY-MM-DD") %></span>
     </div>
     <div class="post-content">
-      <%- page.content %>
+      <%- page.more %>
     </div>
   </article>
 <% } %>

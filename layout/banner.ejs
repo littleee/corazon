@@ -1,5 +1,10 @@
+
+<% if(theme.head_title.enable == true){ %>
 <section class="banner">
-  <div class="">
-    <p>征1文</p>
+  <div class="headintro">
+    <p class="title"><%= theme.head_title.title %></p>
+    <p class="subtitle"><%= theme.head_title.subtitle %></p>
   </div>
 </section>
+<% } %>
+

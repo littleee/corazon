@@ -1,6 +1,6 @@
 $(function(){
   $(window).scroll(function(){
-    if($(window).scrollTop() > 60) {
+    if($(window).scrollTop() > 460) {
       $('.color-bar').addClass('out')
       $('.header').addClass('out')
       $('.nav-collapse').css('top','53px')
@@ -19,5 +19,4 @@ $(function(){
     $('.nav-collapse').click(function(e){
        e.stopPropagation();
     })
-
 })
