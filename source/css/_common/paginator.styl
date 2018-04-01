@@ -1,0 +1,62 @@
+.page-nav{
+  text-align: center
+  font-size: 20px
+  margin: 14px 0
+  width: 100%
+  position: relative
+  .extend{
+    color: #fff
+    transition: color 2s ease
+    &:hover {
+      color: #ee1289
+      text-decoration: none
+    }
+  }
+  .prev{
+    position: absolute
+    left: 0
+  }
+  .next{
+    position: absolute
+    right: 0
+  }
+  .page-number{
+    display: inline-block
+    width: 23px
+    color: #fff
+    transition: color 0.5s ease
+    &:hover {
+      color: #ee1289
+      text-decoration: none
+    }
+  }
+  .current{
+    color: #ee1289
+  }
+}
+
+.post-nav{
+  font-size: 16px
+  .post-nav-next{
+    float:left
+    a{
+      color: #fff
+      transition: color 0.5s ease
+      &:hover {
+        color: #ee1289
+        text-decoration: none
+      }
+    }
+  }
+  .post-nav-prev{
+    float:right
+    a{
+      color: #fff
+      transition: color 0.5s ease
+      &:hover {
+        color: #ee1289
+        text-decoration: none
+      }
+    }
+  }
+}

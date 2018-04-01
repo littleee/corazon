@@ -20,3 +20,10 @@ tag: Tag
 archives: 归档
 home: 首页
 about: 关于
+#分页
+paginator:
+  prev_text: 上一页
+  next_text: 下一页
+footer:
+  powered: "由 %s 强力驱动"
+  theme: 主题

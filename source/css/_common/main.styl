@@ -1,13 +1,47 @@
 .main{
+  position: relative
   width:100%;
-  margin:60px auto 0;
+  min-height:100%
+  padding: 100px 0 140px
   .content{
-    padding-top: 50px
     width:90%
     margin:0 auto
     max-width: 1000px
+    .archive{
+      min-height: 400px
+      position: relative
+      .year{
+        display: block;
+        font-weight: bold;
+        color: #d44950;
+        text-shadow: 1px 1px #efefef, 3px 3px #ffc0cb;
+        font-size: 38px;
+        margin: 10px 0;
+      }
+      .archive_item{
+        font-size:20px
+        margin-left: 40px
+        margin-top: 5px
+        .date{
+         color: #24a5db
+        }
+        a{
+          margin-left: 10px
+          color: #d0648a
+          transition: all 0.5s ease
+          &:hover{
+            text-decoration: none
+            opacity: 0.7
+          }
+        }
+      }
+      .page-nav{
+        position: absolute
+        bottom: 0
+      }
+    }
     .banner{
-      margin: 20px auto
+      margin: 60px auto 20px
       width:100%
       height: 400px
       background-color: #fefefe
@@ -48,6 +82,69 @@
         .subtitle{
           font-size:24px
           color: #666
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 991px){
+  .main{
+    .content{
+      .archive{
+        .year{
+          font-size:26px
+          margin-left: 40px
+        }
+        .archive_item{
+          font-size: 14px
+        }
+      }
+      .banner{
+        height: 300px
+        .headintro{
+          .title{
+            margin-top: 60px
+            font-size: 6rem
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 767px){
+  .main{
+    .content{
+      .banner{
+        height: 260px
+        .headintro{
+          .title{
+            font-size: 4rem
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media(max-width: 480px){
+  .main{
+    padding-top: 80px
+    .content{
+      .banner{
+        margin-top: 80px
+        height: 260px
+        .headintro{
+          .subtitle{
+            font-size: 2rem
+          }
+          .title{
+            margin-top: 70px
+            font-size: 3rem
+            text-shadow: 1px 1px #efefef, 2px 2px #ffc0cb;
+          }
         }
       }
     }

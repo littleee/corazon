@@ -1,12 +1,13 @@
 custom_logo:    #header logo
   enabled: true
   image: /images/logo.png
+favicon: /images/favicon.ico
 menu:
   home: / || home
   tags: /tags/ || tags
   archives: /archives/ || file
   github: https://github.com/littleee/ || github
-  about: /about/ || user
+#  about: /about/ || user
 
 # Enable/Disable menu icons.
 menu_icons: #菜单icon
@@ -17,3 +18,30 @@ head_title:
   enable: true
   title: HELLO, IM CORA
   subtitle: 三流代码 & 一流Bug
+
+#footer
+footer:
+  # 指定网站设置的日期
+  # 如果没定义将会使用当前年份
+  since: 2015
+
+  # Icon between year and copyright info.
+  icon: user
+
+  # If not defined, will be used `author` from Hexo main config.
+  copyright:
+  # -------------------------------------------------------------
+  # Hexo link (Powered by Hexo).
+  powered: true
+
+  theme:
+    name: Corazon
+    enable: true
+    version: true
+  # -------------------------------------------------------------
+  # Any custom text can be defined here.
+  #custom_text: Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
+
+
+  # Theme version
+version: 1.0.0

@@ -8,9 +8,9 @@
       <% lastyear = year %>
     <% } %>
     <div class="archive_item">
+      <span class="date"><%= post.date.format('MM-DD') %></span>
       <a class="title" href="<%- url_for(post.path) %>"><%= post.title %></a>
-      <span class="date"><%= post.date.format('YYYY-MM-DD') %></span>
     </div>
   <% }) %>
-  <%- partial('_common/paginator') %>
 </div>
+<%- partial('_common/paginator') %>
