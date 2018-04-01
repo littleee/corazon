@@ -1,8 +1,9 @@
 <% if (page.total > 1){ %>
   <nav class="page-nav">
     <%- paginator({
-      prev_text: "&laquo; __(Prev)",
-      next_text: "__(Next) &raquo;"
+      prev_text:  __('paginator.prev_text'),
+      next_text:  __('paginator.next_text'),
+      show_all: true
     }) %>
   </nav>
 <% } %>

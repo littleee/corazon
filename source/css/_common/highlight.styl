@@ -14,6 +14,12 @@ highlight-skyblue = #4f9fcf
 highlight-purple = #cc99cc
 color-border = #ddd
 
+h2{
+  font-size:28px!important
+}
+h3{
+  font-size:20px!important
+}
 article
    h2.title
     margin-bottom: .25em;
@@ -47,7 +53,7 @@ article
 
 $code-block
   background: highlight-background
-  padding: 15px 20px
+  padding: 0 5px
   border-style: solid
   border-color: color-border
   border-width: 1px
@@ -71,7 +77,9 @@ $line-numbers
   @extend $line-numbers
   text-align: right
   padding-right: 20px
-
+.highlight.bash{
+  margin: 10px 0
+}
 .highlight
   @extend $code-block
   pre
@@ -83,6 +91,7 @@ $line-numbers
       word-wrap: normal;
       border: 0
       font-family: monospace
+      margin-bottom: 0
   table
     margin: 0
     width: auto

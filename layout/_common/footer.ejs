@@ -1,0 +1,23 @@
+<div class="footer">
+  <div class="footer-wrapper">
+    <div class="copyright">
+      <% var current = date(Date.now(), "YYYY") %>
+      <span>&copy;</span>
+      <% if(!theme.footer.since || theme.footer.since == current){ %>
+      <span><%- current %></span>
+      <% }else{ %>
+      <span><%- theme.footer.since %> - <%- current %></span>
+      <%}%>
+      <span class="author"><i class="fa fa-<%= theme.footer.icon %>"></i><%= theme.footer.copyright ||  config.author %></span>
+    </div>
+    <% if(theme.footer.powered) { %>
+      <span><%- __('footer.powered','<a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a>') %></span>
+    <% } %>
+    <% if(theme.footer.theme.enable) {%>
+      <span>|</span> <span><%- __('footer.theme') %> - <a href="https://github.com/littleee/corazon"><%- theme.footer.theme.name %></a></span>
+      <% if(theme.footer.theme.version) {%>
+        <span>v<%- theme.version %></span>
+      <% } %>
+    <% } %>
+  </div>
+</div>
