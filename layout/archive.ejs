@@ -4,7 +4,7 @@
   <% page.posts.each(function(post){ %>
     <% var year = post.date.year() %>
     <% if(lastyear !== year){ %>
-      <h4 class="year"><%= year %></h4>
+      <h2 class="year"><%= year %></h2>
       <% lastyear = year %>
     <% } %>
     <div class="archive_item">
