@@ -13,14 +13,36 @@ highlight-blue = #2f6f9f
 highlight-skyblue = #4f9fcf
 highlight-purple = #cc99cc
 color-border = #ddd
-
+h1{
+  font-size:24px!important
+}
 h2{
-  font-size:28px!important
+  font-size:22px!important
 }
 h3{
   font-size:20px!important
 }
+h4{
+  font-size:18px!important
+}
+h5{
+  font-size:16px!important
+}
+h6{
+  font-size:14px!important
+}
 article
+   .pullquote.left
+    float: left
+    margin-left: 5px
+    margin-right: 10px
+   .pullquote.right
+    float: right
+    margin-left: 10px
+    margin-right: 5px
+   blockquote
+    p
+     margin-bottom: 25px
    h2.title
     margin-bottom: .25em;
     font-size: 2rem;
@@ -29,12 +51,18 @@ article
     margin-bottom: 30px;
    h3
     font-weight: bold
-    margin: 0
+    margin: 20px 0 10px
    p
     font-size: 14px
+    margin: 0 0 25px
+    line-height: 2
    table
+    width: 100%
     border: 1px solid #eee
     border-collapse: collapse
+    .gutter
+      pre
+        background-color: #eff2f3
     th
       padding: 8px
       border: 1px solid #ddd

@@ -43,6 +43,7 @@
   margin-top: 6em
   .post{
     position: relative
+    line-height:2!important
   }
   .post:first-child {
     margin-top: 0;
@@ -53,20 +54,29 @@
     border-bottom: 2px dashed #ffc0cb
     margin-bottom: 20px
     .post-title-link {
-      display: block
+      display: inline-block
       font-weight: bold;
       color: #ee1289;
       text-shadow: #efefef 1px 1px, #fff0f5 3px 3px;
       text-decoration: none;
-      font-size: 34px
-      margin: 10px 0
+      font-size: 26px
+      margin: 10px 0 0
+      i{
+        font-size: 16px
+      }
     }
-    p{
-      border-radius: 3px
-      color: #fff
-      padding: 3px 10px
-      display: inline-block
-      background-color: #22c3aa
+    .post-category{
+      font-size: 14px
+    }
+    .post-tags{
+      p{
+        border-radius: 3px
+        color: #fff
+        padding: 0 10px
+        display: inline-block
+        background-color: #22c3aa
+        margin-bottom: 10px
+      }
     }
   }
 
@@ -77,11 +87,40 @@
     }
     p{
       img{
-        width: 90%
+        max-width: 90%
         display: block
         margin: 0 auto
         height: auto
         padding: 20px 0
+      }
+    }
+    .video-container{
+      width: 90%;
+      height: 45%;
+      margin: auto;
+      margin-bottom: 20px;
+      iframe{
+        width: 100%
+        height: 100%
+      }
+    }
+    .post-gallery{
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      border-collapse: separate;
+      .post-gallery-img{
+        display: table-cell;
+        vertical-align: middle;
+        border: none;
+      }
+    }
+    .fancybox{
+      width: 33.333%
+      img{
+        margin: 0 auto 25px
+        box-sizing: border-box;
+        padding: 3px;
       }
     }
   }
@@ -110,7 +149,7 @@
       color: #ee2830
       top: 50%
       left: 50%
-      margin-top: -6px
+      margin-top: -13px
       margin-left: -46px
       font-size: 16px
     }
@@ -122,7 +161,7 @@
     margin-top: 10em
     .post-title{
       .post-title-link{
-        font-size:28px
+        font-size:24px
       }
     }
     .post{

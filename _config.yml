@@ -23,7 +23,7 @@ head_title:
 footer:
   # 指定网站设置的日期
   # 如果没定义将会使用当前年份
-  since: 2015
+  since: 2017
 
   # Icon between year and copyright info.
   icon: user
